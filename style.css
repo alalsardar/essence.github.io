@@ -809,6 +809,9 @@ textarea:focus {
 .shop-product-area .add-actions {
 	padding: 0 15px;
 }
+
+
+
 /*----------------------------------------*/
 /* 	1.12 Li's Mobile Menu Customization 
 /*----------------------------------------*/
@@ -1321,6 +1324,9 @@ textarea:focus {
 	font-size: 12px;
 	color: #242424;
 }
+.header-top .header-top-left{
+	width: 100%;
+}
 /*Header Top Menu*/
 .ht-menu {
 	display: flex;
@@ -1729,7 +1735,7 @@ textarea:focus {
 }
 /*Header Bottom Menu*/
 .header-bottom {
-		background: #fed700;
+		background: #ff6666;
 		margin-bottom: 20px;
 }
 .hb-menu > nav > ul {
@@ -1926,7 +1932,7 @@ textarea:focus {
 }
 /*Sticky*/
 .header-sticky.sticky {
-	background: rgba(254,215,0,.8);
+	background: #ff6666;
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -2754,12 +2760,20 @@ textarea:focus {
 /*  service process
 /*----------------------------------------*/
 .service_process_wrapper{
-	background: #fed700;
+	background: #ff6666;
 	width: 100%;
-	display: flex;
-	justify-content: flex-around;
+/*	display: flex;
+	justify-content: flex-around;*/
 	border: 1px solid #e1e1e1;
 }
+
+@media only screen and (min-width: 600px){
+	.service_process_wrapper{
+		display: flex;
+		justify-content: flex-around;
+	}
+}
+
 
 .service_process_wrapper .each_service_process{
 	flex: 1;
@@ -2773,6 +2787,11 @@ textarea:focus {
 .service_process_wrapper .each_service_process .ser_icon img{
 	width: 80px;
 	height: 80px;
+	margin-top: -10px;
+}
+
+.service_process_wrapper .each_service_process .ser_txt{
+	margin-top: 10px;
 }
 
 .service_process_wrapper .each_service_process .ser_txt p{
@@ -5507,3 +5526,25 @@ span.required {
 /*----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------> The End <-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 600px){
+	.home_category_pro .row{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+	/*	grid-template-columns: repeat(5, auto);*/
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.home_category_pro .row .each_single_product{
+		width: 100%;
+	}
+}
+
+
+
+.home_category_pro .row .each_single_product .single-product-wrap{
+/*	grid-column: 1 / 5;*/
+}
